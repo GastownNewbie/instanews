@@ -28,24 +28,28 @@ p{
 }
 #news-select{
     color: white;
+    display: block;
+    text-align: center;
 }
 header{
     max-width: 640px;
     display: flex;
     justify-content: center;
 }
-.select-form{
+
+.select-form-container{
     display: flex;
     justify-content: center;
+}
+.select-form{
+    display: block;
+    text-align: center;
   
 }
-select-item{
-    display: flex;
-    justify-content: center;
-    
-}
+
 footer{
     display:flex;
     justify-content: center;
+    margin-top: 100px;
     align-self: flex-end;
 }
