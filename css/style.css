@@ -1,0 +1,51 @@
+body{
+   
+    font-family:"Open Sans"
+}
+site{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+img {
+    max-width: 100%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    }
+body {
+    background-color: black;
+    min-height: 100vh;
+    
+}
+label {
+    color: white
+
+}
+p{
+    color: white;
+}
+#news-select{
+    color: white;
+}
+header{
+    max-width: 640px;
+    display: flex;
+    justify-content: center;
+}
+.select-form{
+    display: flex;
+    justify-content: center;
+  
+}
+select-item{
+    display: flex;
+    justify-content: center;
+    
+}
+footer{
+    display:flex;
+    justify-content: center;
+    align-self: flex-end;
+}
