@@ -21,7 +21,7 @@ $('#news-select').on('change', function () {
                         <li>
                             <h3>${value.title}</h3>
                             <p>${value.abstract}</p>
-                            <p>${value.multimedia, [0]}</>
+                            <p><img src = ${value.multimedia[0].url}></>
                         </li>
                     `);
                     console.log(value);
