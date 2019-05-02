@@ -2,7 +2,7 @@ body{
    
     font-family:"Open Sans"
 }
-site{
+.site{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,6 +17,7 @@ img {
 body {
     background-color: black;
     min-height: 100vh;
+    color: white;
     
 }
 label {
@@ -34,14 +35,18 @@ p{
 header{
     max-width: 640px;
     display: flex;
+    flex-grow: 1;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+}.select-form-container{
+    display: flex;
+    justify-content: center;
+
 }
 
-.select-form-container{
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-}
+
 .select-form{
     display: block;
     text-align: center;

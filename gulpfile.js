@@ -8,7 +8,7 @@ const prettyError = require("gulp-prettyerror");
 gulp.task("lint", function(){
     return (
         gulp.src(["./js/*.js"])
-        .pipe(prettyErro())
+        .pipe(prettyError())
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(eslint.failAfterError())
