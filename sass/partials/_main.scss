@@ -64,12 +64,14 @@ header{
 
 ul{
     list-style: none;
-    padding: 1,0,0,1;
+    padding: 0;
 
 }
 .article{
 position: relative;
 object-fit: cover;
+max-height: 400px;
+max-width: 600px;
 
 }
 
@@ -77,8 +79,9 @@ object-fit: cover;
 .article-text{
 position: absolute;
 bottom: 0px;
-margin-left: 5px;
-margin-right: 5px;
+margin:0;
+padding: 1em;
+background: rgba(0,0,0,0.5)
 // max-width: 600px;
 
 }
