@@ -7,6 +7,7 @@ $('#news-select').on('change', function () {
     if (selected !== '') {
         console.log('change');
         console.log('The value you picked is: ' + selected);
+        //:selected $('value.text').val('');
 
         $.ajax({
             method: 'get',
@@ -18,18 +19,28 @@ $('#news-select').on('change', function () {
                 console.log(data);
                 $.each(data.results, function (index, value) {
                     $(".news-articles").append(`
-                        <li>
-                            <h3>${value.title}</h3>
-                            <p>${value.abstract}</p>
-                            <p><img src = ${value.multimedia[0].url}></>
+                        <li class="article">
+                            <img src="${value.multimedia[4].url}">
+                            <p class="article-text">${value.abstract}</p>
                         </li>
                     `);
+                    
                     console.log(value);
                 })
             }).fail(function () {
                 console.log('fail');
+
+        
             });
+           
 
     }// if selected !== ''
 });// on change event
-//<img src=${value.url}>
+
+
+
+//Bits of the puzzle I may need to come back to:
+//<img src = ${value.url}>
+// <h3>${value.title}</h3>
+//<p><img src = ${value.url}></p>
+// note to self, throwing an error re url with arts, business, science, politics but not with other two categories selected??

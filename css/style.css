@@ -9,7 +9,12 @@ body{
     align-items: center;
     min-height: 100vh;
 }
+
 img {
+
+    max-width: 100%;
+}
+.logo {
     max-width: 100%;
     margin-top: 100px;
     margin-bottom: 20px;
@@ -53,6 +58,23 @@ header{
   
 }
 
+ul{
+    list-style: none;
+
+}
+.article{
+position: relative;
+object-fit: cover;
+
+}
+
+.article-text{
+position: absolute;
+bottom: 0px;
+margin-left: 5px;
+margin-right: 5px;
+
+}
 footer{
     display:flex;
     justify-content: center;
