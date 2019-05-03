@@ -16,11 +16,13 @@ $('#news-select').on('change', function () {
 
         })
             .done(function (data) {
+                // preload gif set to hide
                 console.log(data);
+                $('.news-articles').empty();
                 $.each(data.results, function (index, value) {
                     $(".news-articles").append(`
                         <li class="article">
-                            <img src="${value.multimedia[4].url}">
+                            <img class="article-pic" src="${value.multimedia[4].url}">
                             <p class="article-text">${value.abstract}</p>
                         </li>
                     `);
@@ -29,13 +31,11 @@ $('#news-select').on('change', function () {
                 })
             }).fail(function () {
                 console.log('fail');
-
-
-        
+                // preload gif set to hide
             })
 
             .always(function(){
-                $('.value').empty();
+                // working with the preload gif set to show
               });
            
 

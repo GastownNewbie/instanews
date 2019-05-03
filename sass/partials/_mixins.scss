@@ -1,0 +1,22 @@
+@mixin tablet {
+    @media (min-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop-width) {
+        @content;
+    }
+    
+}
+// @media tablet {
+//     li {
+//     flex: 0 1 50%;
+// }
+// }
+// @media desktop {
+//     li {
+//         flex: 0 1 25%;
+//     }
+// }
