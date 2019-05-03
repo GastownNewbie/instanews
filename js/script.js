@@ -30,8 +30,13 @@ $('#news-select').on('change', function () {
             }).fail(function () {
                 console.log('fail');
 
+
         
-            });
+            })
+
+            .always(function(){
+                $('.value').empty();
+              });
            
 
     }// if selected !== ''
