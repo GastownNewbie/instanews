@@ -353,7 +353,7 @@ p {
   text-align: center; }
 
 header {
-  max-width: 640px;
+  max-width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,7 +391,7 @@ ul {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 400px;
+  max-height: 500px;
   max-width: 600px; }
 
 .article-text {

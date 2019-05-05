@@ -42,7 +42,7 @@ p{
     text-align: center;
 }
 header{
-    max-width: 640px;
+    max-width: 600px;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -70,7 +70,7 @@ ul{
 .article{
 position: relative;
 object-fit: cover;
-max-height: 400px;
+max-height: 500px;
 max-width: 600px;
 
 }
