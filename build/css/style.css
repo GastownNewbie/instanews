@@ -344,13 +344,17 @@ body {
 label {
   color: white; }
 
+#news-select-form {
+  color: black; }
+
 p {
   color: white; }
 
 #news-select {
-  color: white;
+  color: black;
   display: block;
-  text-align: center; }
+  text-align: center;
+  background-color: white; }
 
 header {
   display: -webkit-box;
@@ -382,6 +386,9 @@ header {
   display: block;
   text-align: center; }
 
+#news-select {
+  width: 100%; }
+
 ul {
   list-style: none;
   padding: 0; }
@@ -402,7 +409,8 @@ ul {
   position: absolute;
   bottom: 0px;
   margin: 0;
-  padding: 1em;
+  padding: .5em;
+  font-size: .9em;
   background: rgba(0, 0, 0, 0.5); }
 
 footer {
