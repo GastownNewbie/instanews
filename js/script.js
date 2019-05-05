@@ -5,8 +5,8 @@
 $('#news-select').on('change', function () {
     const selected = $(this).val();
     if (selected !== '') {
-        console.log('change');
-        console.log('The value you picked is: ' + selected);
+        // console.log('change');
+        // console.log('The value you picked is: ' + selected);
         //:selected $('value.text').val('');
 
         $.ajax({
@@ -15,6 +15,15 @@ $('#news-select').on('change', function () {
 
 
         })
+
+        const articlesFiltered =
+        news-articles.filter(function(article)
+        {
+            return article.url !== undefined;
+        })
+
+        console.log(articlesFiltered);
+
             .done(function (data) {
                 // preload gif set to hide
                 console.log(data);

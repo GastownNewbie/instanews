@@ -33,6 +33,10 @@ label {
     color: white
 
 }
+.display-news-container {
+
+    padding-top: 40px;
+}
 #news-select-form {
     color:black;
 }
@@ -58,8 +62,6 @@ header{
     // justify-content: center;
     justify-content: right;
 
-    
-
 }
 
 
@@ -76,6 +78,8 @@ header{
 ul{
     list-style: none;
     padding: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
 
 }
 .article{
@@ -88,6 +92,7 @@ position: relative;
 object-fit: cover;
 height: 700px;
 width: 600px;
+display: block;
    }
 
 .article-text{
@@ -122,6 +127,10 @@ footer{
     label {
         font-size: .7em;
     }
+    .display-news-container {
+
+        padding-top: 0;
+    }
     .select-form {
         margin-top: 75px;
     }
@@ -140,8 +149,13 @@ footer{
     .article-pic {
     position: relative;
     object-fit: cover;
-    width: 25vw;
+    width: 50vw;
     height: 50vw;
     
        }
+    }
+    @media screen and (min-width:1000px){
+        .article-pic {
+            width: 25vw;
+        }
     }
