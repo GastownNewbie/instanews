@@ -481,12 +481,12 @@ footer {
     -o-object-fit: cover;
        object-fit: cover;
     width: 50vw;
-    height: 50vw; } }
+    height: 60vw; } }
 
 @media screen and (min-width: 1000px) {
   .article-pic {
     width: 25vw;
-    height: 25vw; }
+    height: 30vw; }
   .logo {
     margin-left: 20px; } }
 
