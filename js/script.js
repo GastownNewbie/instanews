@@ -9,6 +9,7 @@ $('#news-select').on('change', function () {
         // console.log('The value you picked is: ' + selected);
         //:selected $('value.text').val('');
 
+
         $.ajax({
             method: 'get',
             url: 'https://api.nytimes.com/svc/topstories/v2/' +  selected + '.json?api-key=IUALhLCmsVYpEVPVBz1PSFSRnqPN2qpJ'
@@ -16,13 +17,13 @@ $('#news-select').on('change', function () {
 
         })
 
-        const articlesFiltered =
-        news-articles.filter(function(article)
-        {
-            return article.url !== undefined;
-        })
+        // const articlesFiltered =
+        // news-articles.filter(function(article)
+        // {
+        //     return article.url !== undefined;
+        // })
 
-        console.log(articlesFiltered);
+        // console.log(articlesFiltered);
 
             .done(function (data) {
                 // preload gif set to hide
@@ -31,7 +32,9 @@ $('#news-select').on('change', function () {
                 $.each(data.results, function (index, value) {
                     $(".news-articles").append(`
                         <li class="article">
-                            <img class="article-pic" src="${value.multimedia[4].url}">
+                         <a hef="${value.url}" target="_blank">
+                         <img class="article-pic" src="${value.multimedia[4].url}"/>
+                         </a>
                             <p class="article-text">${value.abstract}</p>
                         </li>
                     `);

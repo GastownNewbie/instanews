@@ -90,8 +90,7 @@ object-fit: cover;
 .article-pic {
 position: relative;
 object-fit: cover;
-height: 700px;
-width: 600px;
+height: 100vw;
 display: block;
    }
 
@@ -117,9 +116,13 @@ footer{
     flex-grow: 2;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: left;
     }
     .logo {
         max-height: 75px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 50px;
     }
     #news-select {
         font-size: .7em;
@@ -132,7 +135,8 @@ footer{
         padding-top: 0;
     }
     .select-form {
-        margin-top: 75px;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
     .news-articles {
         display: flex;
@@ -157,5 +161,10 @@ footer{
     @media screen and (min-width:1000px){
         .article-pic {
             width: 25vw;
+            height: 25vw;
+        }
+        .logo {
+
+            margin-left: 20px;
         }
     }
