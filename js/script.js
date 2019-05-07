@@ -3,6 +3,10 @@
 
 
 $('#news-select').on('change', function () {
+    $('.header').addClass('shrink');
+    $('.site-main').addClass('grow');
+    $(".logo").addClass("margin")
+
     const selected = $(this).val();
     if (selected !== '') {
         // console.log('change');
@@ -17,28 +21,29 @@ $('#news-select').on('change', function () {
 
         })
 
-        // const articlesFiltered =
-        // news-articles.filter(function(article)
-        // {
-        //     return article.url !== undefined;
-        // })
-
-        // console.log(articlesFiltered);
-
+       
             .done(function (data) {
                 // preload gif set to hide
-                console.log(data);
                 $('.news-articles').empty();
-                $.each(data.results, function (index, value) {
+
+            const filteredData = data.results.filter(function(article){
+                    return article.multimedia[4] !== undefined;}).slice(0, 12);
+
+
+
+            
+ 
+                $.each(filteredData, function (index, value) {
                     $(".news-articles").append(`
                         <li class="article">
-                         <a hef="${value.url}" target="_blank">
+                         <a href="${value.url}" target="_blank">
                          <img class="article-pic" src="${value.multimedia[4].url}"/>
                          </a>
                             <p class="article-text">${value.abstract}</p>
                         </li>
                     `);
                     
+
                     console.log(value);
                 })
             }).fail(function () {
