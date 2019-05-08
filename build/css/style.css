@@ -415,6 +415,7 @@ ul {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100vw;
+  width: 100vw;
   display: block; }
 
 .article-text {
@@ -496,7 +497,7 @@ footer {
     width: 50vw;
     height: 60vw; } }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 600px) and (min-width: 1000px) {
   .article-pic {
     width: 25vw;
     height: 30vw; } }

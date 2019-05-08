@@ -50,7 +50,7 @@ p{
     background-color: white;
 }
 header{
-    // max-width: 600px;
+
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -96,6 +96,7 @@ object-fit: cover;
 position: relative;
 object-fit: cover;
 height: 100vw;
+width: 100vw;
 display: block;
    }
 
@@ -132,14 +133,14 @@ footer{
     flex-grow: 1;
    
   }
+//   @media screen and (min-width: 450px){
+//     .select-form-container{
+//         justify-content: center;
+//   }
+// }
 
 @media screen and (min-width:600px){
-    // header {
-    // // flex-grow: 2;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // justify-content: left;
-    // }
+
     .logo {
         max-height: 75px;
         margin-top: 20px;
@@ -179,11 +180,11 @@ footer{
     height: 60vw;
     
        }
-    }
+
     @media screen and (min-width:1000px){
         .article-pic {
             width: 25vw;
             height: 30vw;
         }
-        
     }
+}

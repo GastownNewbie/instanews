@@ -4,14 +4,9 @@
     }
 }
 @mixin tablet {
-    @media 
-    
-   header{
-        display: flex;
-        flex-grow: 2;
-        flex-direction: row;
-    
-}
+    @media (min-width: $tablet-width){
+        
+    }
 }
 
 @mixin desktop {

@@ -1,38 +1,34 @@
-// connect to NYT API for news articles
-
-
+// change header size when news selected
 
 $('#news-select').on('change', function () {
     $('.header').addClass('shrink');
     $('.site-main').addClass('grow');
-    $(".logo").addClass("margin")
+    $(".logo").addClass("margin");
+
+
+
+    // connect to NYT API for news articles
 
     const selected = $(this).val();
     if (selected !== '') {
         // console.log('change');
-        // console.log('The value you picked is: ' + selected);
-        //:selected $('value.text').val('');
+
 
 
         $.ajax({
             method: 'get',
-            url: 'https://api.nytimes.com/svc/topstories/v2/' +  selected + '.json?api-key=IUALhLCmsVYpEVPVBz1PSFSRnqPN2qpJ'
-
+            url: 'https://api.nytimes.com/svc/topstories/v2/' + selected + '.json?api-key=IUALhLCmsVYpEVPVBz1PSFSRnqPN2qpJ'
 
         })
-
-       
             .done(function (data) {
-                // preload gif set to hide
                 $('.news-articles').empty();
 
-            const filteredData = data.results.filter(function(article){
-                    return article.multimedia[4] !== undefined;}).slice(0, 12);
+                // filter news articles to show those with pics and show 12 articles
 
+                const filteredData = data.results.filter(function (article) {
+                    return article.multimedia[4] !== undefined;
+                }).slice(0, 12);
 
-
-            
- 
                 $.each(filteredData, function (index, value) {
                     $(".news-articles").append(`
                         <li class="article">
@@ -42,27 +38,17 @@ $('#news-select').on('change', function () {
                             <p class="article-text">${value.abstract}</p>
                         </li>
                     `);
-                    
-
-                    console.log(value);
                 })
             }).fail(function () {
-                console.log('fail');
+
                 // preload gif set to hide
             })
 
-            .always(function(){
+
+            .always(function () {
                 // working with the preload gif set to show
-              });
-           
+            });
 
-    }// if selected !== ''
-});// on change event
+    }// end of if statement
 
-
-
-//Bits of the puzzle I may need to come back to:
-//<img src = ${value.url}>
-// <h3>${value.title}</h3>
-//<p><img src = ${value.url}></p>
-// note to self, throwing an error re url with arts, business, science, politics but not with other two categories selected??
+});// end of on change
