@@ -1,12 +1,14 @@
+@mixin phone{
+    @media screen and (min-width: $phone-width) {
+        @content; 
+}
+}
+
 @mixin tablet {
     @media screen and (min-width: $tablet-width) {
         @content;
     }
-}
-@mixin tablet {
-    @media (min-width: $tablet-width){
-        
-    }
+
 }
 
 @mixin desktop {
