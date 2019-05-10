@@ -1,6 +1,8 @@
 body{
    
-    font-family:"Open Sans"
+    font-family:"Open Sans";
+    display: flex;
+    flex-direction: column;
 }
 .site{
 
@@ -89,7 +91,7 @@ ul{
 .article{
 position: relative;
 object-fit: cover;
-// max-width: 600px;
+
    }
 .article-pic {
 position: relative;
@@ -106,7 +108,7 @@ margin:0;
 padding: .5em;
 font-size: .9em;
 background: rgba(0,0,0,0.5)
-// max-width: 600px;
+
 
 }
 
@@ -116,22 +118,7 @@ footer{
     margin-top: 100px;
     bottom: 0px;
 }
-.shrink {
-    flex-grow: 0;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
-  }
-  
-  .margin {
 
-    margin-left: 20px;
-}
-
-  .grow {
-    flex-grow: 1;
-   
-  }
 
 
 
@@ -142,27 +129,30 @@ footer{
         max-width: 140px;
         margin-left: auto;
         margin-right: auto;
-        display: block;
-       
+        
     }
     .logo {
         margin-left: 0;
     }
 
 }
+
 @include tablet{
 
     .logo {
-        max-height: 75px;
+    
         margin-top: 20px;
         margin-bottom: 20px;
-        // margin-left: 50px;
+
     }
     #news-select {
         font-size: .7em;
     }
     label {
         font-size: .7em;
+    }
+    header {
+        flex-direction: row;
     }
     .display-news-container {
 
@@ -171,17 +161,9 @@ footer{
 
     .select-form-container, header{
         max-width: fit-content;
-        margin-left: 10px;
         display: flex;
     }
-    // .select-form-container, header{
 
-    //     max-width: 140px;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     display: flex;
-       
-    // }
     .select-form {
         margin-top: 0;
         margin-bottom: 20px;
@@ -205,6 +187,22 @@ footer{
     height: 60vw;
     
        }
+       .shrink {
+        flex-grow: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        margin-left: 0;
+      }
+      
+    
+      .grow {
+        flex-grow: 1;
+       
+      }
+      .margin {
+          margin-left: 10px;
+      }
 
     @include desktop{
         .article-pic {
