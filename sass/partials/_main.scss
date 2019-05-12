@@ -50,7 +50,7 @@ header{
 
 // / Select form and label ///////
 label {
-    color: white
+    color: #FFFFFF
 
 }
 .display-news-container {
@@ -60,7 +60,7 @@ label {
 
 
 p{
-    color: white;
+    color: #FFFFFF;
 }
 #news-select{
     color: black;
@@ -89,6 +89,7 @@ p{
 #news-select {
     font-size: 1em;
     font-weight: 600;
+    font-family: "Open Sans Light"
 }
 
 #loader {
@@ -139,6 +140,9 @@ footer{
     bottom: 0px;
 }
 
+footer p{
+    color: #c2c2c2
+}
 
 // Media Queries /////
 

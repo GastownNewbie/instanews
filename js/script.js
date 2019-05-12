@@ -36,7 +36,7 @@ $(function () {
                         $(".news-articles").append(`
                         <li class="article">
                          <a href="${value.url}" target="_blank">
-                         <img class="article-pic" src="${value.multimedia[4].url}"/>
+                         <img class="article-pic" src="${value.multimedia[4].url}" alt= "${value.multimedia.caption}"/>
                          </a>
                             <p class="article-text">${value.abstract}</p>
                         </li>

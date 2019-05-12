@@ -372,13 +372,13 @@ header {
   transition: .7s; }
 
 label {
-  color: white; }
+  color: #FFFFFF; }
 
 .display-news-container {
   padding-top: 40px; }
 
 p {
-  color: white; }
+  color: #FFFFFF; }
 
 #news-select {
   color: black;
@@ -403,7 +403,8 @@ p {
 
 #news-select {
   font-size: 1em;
-  font-weight: 600; }
+  font-weight: 600;
+  font-family: "Open Sans Light"; }
 
 #loader {
   padding-top: 8px; }
@@ -448,6 +449,9 @@ footer {
   font-weight: 100;
   margin-top: 100px;
   bottom: 0px; }
+
+footer p {
+  color: #c2c2c2; }
 
 @media screen and (min-width: 300px) {
   .select-form-container, header {
