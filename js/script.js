@@ -1,8 +1,8 @@
 
 $(function () {
-
+    // hide loader
     $("#loader").hide();
-    // change header size when news selected
+    // change header size when news selected and show loader
     $('#news-select').on('change', function () {
         $('.header').addClass('shrink');
         $('.site-main').addClass('grow');
@@ -12,7 +12,7 @@ $(function () {
 
 
 
-        // connect to NYT API for news articles
+        // connect to NYT API for news articles and hide loader
 
         const selected = $(this).val();
         if (selected !== '') {
@@ -23,7 +23,6 @@ $(function () {
             })
                 .done(function (data) {
                     $('.news-articles').empty();
-
                     $("#loader").hide();
 
 
@@ -44,15 +43,20 @@ $(function () {
                     `);
                     })
                 }).fail(function () {
+                    // fail to load message
+                    $(".news-articles").append(`
 
-                    // preload gif set to hide
+                    <p>Unable to load articles.</p>
+
+                    `);
+                
                 })
                 .always(function () {
                    
-                    // working with the preload gif set to show
-                });
+                    
+                }); 
 
         }// end of if statement
 
     });// end of on change
-});
+}); // end of function
