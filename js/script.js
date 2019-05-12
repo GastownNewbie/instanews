@@ -46,7 +46,7 @@ $(function () {
                     // fail to load message
                     $(".news-articles").append(`
 
-                    <p>Unable to load articles.</p>
+                    <p class="fail-message">Unable to load articles.</p>
 
                     `);
                 

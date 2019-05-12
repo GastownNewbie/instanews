@@ -96,7 +96,11 @@ p{
 
     padding-top: 8px;
 }
-
+.fail-message {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
 
 ul{
     list-style: none;
@@ -196,6 +200,14 @@ footer p{
         margin-top: 0;
         margin-bottom: 20px;
     }
+
+    .fail-message {
+        display: flex;
+        justify-content: left;
+        padding-left: 15em;
+        font-weight: 600;
+    }
+
     .news-articles {
         display: flex;
         flex-grow: 1;

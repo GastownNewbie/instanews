@@ -409,6 +409,15 @@ p {
 #loader {
   padding-top: 8px; }
 
+.fail-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600; }
+
 ul {
   list-style: none;
   padding: 0;
@@ -488,6 +497,15 @@ label {
   .select-form {
     margin-top: 0;
     margin-bottom: 20px; }
+  .fail-message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-left: 15em;
+    font-weight: 600; }
   .news-articles {
     display: -webkit-box;
     display: -ms-flexbox;
