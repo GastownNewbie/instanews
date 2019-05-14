@@ -25,14 +25,12 @@ Use JQuery to select articles in the categories of your choosing.
                 method: 'get',
                 url: 'https://api.nytimes.com/svc/topstories/v2/' + selected + '.json?api-key=IUALhLCmsVYpEVPVBz1PSFSRnqPN2qpJ'`
 
-## 
-
-
 
 ## Contact
 Gay Stephenson [@gaystephenson](https://twitter.com/gaystephenson)
 
 Project Link [https://github.com/GastownNewbie/instanews.git](https://github.com/GastownNewbie/instanews.git)
+
 
 ## Acknowlegments
 Thanks to our talented and patient teachers, Jim Bennett and Ben Organ.
